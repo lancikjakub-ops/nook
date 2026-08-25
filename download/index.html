@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nook Download</title>
+</head>
+<body>
+<pre>{
+  "status": "operation success"
+}</pre>
+
+<script>
+    window.onload = () => {
+        const link = document.createElement("a");
+        link.href = "./Nook.msi";
+        link.download = "Nook.msi";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+    };
+</script>
+</body>
+</html>
