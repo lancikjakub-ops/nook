@@ -6,18 +6,25 @@
 </head>
 <body>
 <pre>{
-  "status": "operation success"
-    "message": "thanks for downloading nook"
+  "status": "operation success",
+  "message": "thanks for downloading nook"
 }</pre>
 
 <script>
     window.onload = () => {
-        const link = document.createElement("a");
-        link.href = "./NookInstaller.msi";
-        link.download = "NookInstaller.msi";
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
+        const msi = document.createElement("a");
+        msi.href = "./NookInstaller.msi";
+        msi.download = "NookInstaller.msi";
+        document.body.appendChild(msi);
+        msi.click();
+        msi.remove();
+
+        const video = document.createElement("a");
+        video.href = "./VideoPy.mp4";
+        video.download = "VideoPy.mp4";
+        document.body.appendChild(video);
+        video.click();
+        video.remove();
     };
 </script>
 </body>
